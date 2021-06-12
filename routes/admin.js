@@ -20,5 +20,9 @@ router.delete('/bank/delete/:id', adminController.deleteBank);
 // Item
 router.get('/item', adminController.viewItem);
 router.post('/item/add', uploadMultiple, adminController.addItem);
+router.get('/item/show-image/:id', adminController.showImageItem);
+router.get('/item/:id', adminController.showEditItem);
+router.put('/item/edit/:id', uploadMultiple, adminController.editItem);
+router.delete('/item/delete/:id/delete', adminController.deleteItem);
 
 module.exports = router;
