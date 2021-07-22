@@ -19,7 +19,8 @@ const itemSchema = new mongoose.Schema({
     required: true
   },
   isPopular: {
-    type: Boolean
+    type: Boolean,
+    default: false
   },
   description: {
     type: String,
@@ -34,7 +35,7 @@ const itemSchema = new mongoose.Schema({
     ref: 'Image'
   }],
   featureId: [{
-    type: ObjectId,
+    type: mongoose.SchemaTypes.ObjectId,
     ref: 'Feature'
   }],
   activityId: [{

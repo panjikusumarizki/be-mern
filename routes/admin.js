@@ -25,4 +25,10 @@ router.get('/item/:id', adminController.showEditItem);
 router.put('/item/edit/:id', uploadMultiple, adminController.editItem);
 router.delete('/item/delete/:id/delete', adminController.deleteItem);
 
+// Endpoint detail item
+router.get('/item/show-detail-item/:itemId', adminController.viewDetailItem);
+router.post('/item/add/feature', upload, adminController.addFeature);
+router.put('/item/update/feature', upload, adminController.editFeature);
+router.delete('/item/:itemId/feature/delete/:id', adminController.deleteFeature);
+
 module.exports = router;
