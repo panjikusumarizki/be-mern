@@ -31,4 +31,8 @@ router.post('/item/add/feature', upload, adminController.addFeature);
 router.put('/item/update/feature', upload, adminController.editFeature);
 router.delete('/item/:itemId/feature/delete/:id', adminController.deleteFeature);
 
+router.post('/item/add/activity', upload, adminController.addActivity);
+router.put('/item/update/activity', upload, adminController.editActivity);
+router.delete('/item/:itemId/activity/delete/:id', adminController.deleteActivity);
+
 module.exports = router;
