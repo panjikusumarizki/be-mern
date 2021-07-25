@@ -57,8 +57,8 @@ module.exports = {
       res.status(200).json({ 
         hero: {
           travelers: traveler.length,
-          treasure: treasure.length,
-          city: city.length
+          treasures: treasure.length,
+          cities: city.length
         },
         mostPicked,
         category,
