@@ -9,7 +9,7 @@ const flash = require('connect-flash');
 const cors = require('cors');
 
 const mongoose = require('mongoose');
-mongoose.connect('mongodb+srv://nott:forlearning@cluster0.d6nox.mongodb.net/db_staycation?retryWrites=true&w=majority', {
+mongoose.connect('mongodb+srv://nott:forlearning@cluster0.kbxup.mongodb.net/db_staycation?retryWrites=true&w=majority', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
   useCreateIndex: true,
